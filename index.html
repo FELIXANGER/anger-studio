@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anger Studio – Cinematic listing films</title>
+  <meta name="description" content="Short cinematic films for real estate listings anywhere in the world, made from the listing's existing photos. No film crew, no shoot. From $99 a film, ready within 12 hours.">
+  <meta name="theme-color" content="#0e2429">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Anger Studio">
+  <meta property="og:title" content="Anger Studio – Cinematic listing films">
+  <meta property="og:description" content="Short cinematic films for your listing, made from the photos you already have. Anywhere in the world. From $99, ready within 12 hours.">
+  <meta property="og:url" content="https://felixanger.github.io/anger-studio/">
+  <meta property="og:image" content="https://felixanger.github.io/anger-studio/assets/posters/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Infinity pool facing the Dubai Marina skyline, a frame from an Anger Studio sample film">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap">
+  <link rel="preload" as="image" href="assets/posters/emaar-building.jpg">
+  <link rel="stylesheet" href="assets/css/site.css">
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      if (window.matchMedia && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        d.classList.add('intro');
+        // Fail-safe: never leave the film closed if site.js is slow or missing
+        setTimeout(function () { d.classList.add('go'); }, 2500);
+      }
+    })();
+  </script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.12-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4.5v15l12.5-7.5z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+
+<header class="hero" id="top">
+  <div class="topbar wrap">
+    <p class="topbar-note">Listing films, anywhere in the world</p>
+    <a class="btn btn-light btn-small topbar-cta" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20a%20film%20for%20my%20listing" target="_blank" rel="noopener" data-cta>
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>
+      <span class="btn-label-short">WhatsApp</span><span class="btn-label-long">Message us on WhatsApp</span>
+    </a>
+  </div>
+
+  <div class="screen">
+    <div class="screen-frame">
+      <video class="screen-video" id="hero-video" muted loop playsinline preload="none"
+        poster="assets/posters/emaar-building.jpg"
+        data-src-small="assets/videos/emaar-building-720.mp4"
+        data-src-large="assets/videos/hero-emaar-building-1080.mp4"
+        aria-label="Sample film of Emaar Beachfront, Dubai, playing without sound"></video>
+      <div class="screen-caption">
+        <p class="screen-title">Emaar Beachfront, Dubai <span class="runtime">0:31</span></p>
+        <button class="btn btn-glass" type="button" data-open-film
+          data-src="assets/videos/emaar-building-720.mp4"
+          data-poster="assets/posters/emaar-building.jpg"
+          data-title="Emaar Beachfront" data-place="Dubai" data-runtime="0:31">
+          <svg aria-hidden="true"><use href="#i-play"/></svg>Watch with sound
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-text wrap">
+    <div class="wordmark-wrap">
+      <h1 class="wordmark">Anger Studio</h1>
+    </div>
+    <div class="hero-copy">
+      <p class="lead">Cinematic listing films, made from the photos you already have.</p>
+      <div class="hero-side">
+        <p class="hero-sub">For real estate agents, owners and developers, wherever the listing is. No film crew, no shoot, no scheduling. From $99 a film, ready within 12 hours.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light btn-large" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20a%20film%20for%20my%20listing" target="_blank" rel="noopener" data-cta>
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>Message us on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section section-dark films-section" id="films" aria-labelledby="films-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" id="films-title">Sample films</h2>
+        <p class="section-note">
+          <span class="hint-hover">Hover over a film to preview it. Click to watch it with sound.</span>
+          <span class="hint-touch">Tap a film to watch it with sound.</span>
+        </p>
+      </div>
+
+      <ul class="films">
+        <li class="film film-feature"
+          data-src="assets/videos/emaar-building-720.mp4"
+          data-poster="assets/posters/emaar-building.jpg"
+          data-title="Emaar Beachfront" data-place="Dubai Harbour, Dubai" data-runtime="0:31">
+          <div class="film-frame">
+            <video class="film-preview" muted loop playsinline preload="none" aria-hidden="true"
+              poster="assets/posters/emaar-building.jpg"
+              data-src="assets/videos/emaar-building-preview.mp4"></video>
+          </div>
+          <div class="film-meta">
+            <h3 class="film-title">Emaar Beachfront</h3>
+            <button class="film-play" type="button" aria-label="Watch the Emaar Beachfront film with sound (31 seconds)">
+              <span class="film-play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span><span class="runtime">0:31</span>
+            </button>
+            <p class="film-place">Dubai Harbour, Dubai</p>
+            <p class="film-desc">The whole building. Tower, pool deck, private beach, lobby, then the apartment.</p>
+          </div>
+        </li>
+
+        <li class="film film-feature film-feature-alt"
+          data-src="assets/videos/arise-charoen-mueang-720.mp4"
+          data-poster="assets/posters/arise-charoen-mueang.jpg"
+          data-title="Arise Charoen Mueang" data-place="Chiang Mai, Thailand" data-runtime="0:50">
+          <div class="film-frame">
+            <video class="film-preview" muted loop playsinline preload="none" aria-hidden="true"
+              poster="assets/posters/arise-charoen-mueang.jpg"
+              data-src="assets/videos/arise-charoen-mueang-preview.mp4"></video>
+          </div>
+          <div class="film-meta">
+            <h3 class="film-title">Arise Charoen Mueang</h3>
+            <button class="film-play" type="button" aria-label="Watch the Arise Charoen Mueang film with sound (50 seconds)">
+              <span class="film-play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span><span class="runtime">0:50</span>
+            </button>
+            <p class="film-place">Chiang Mai, Thailand</p>
+            <p class="film-desc">Condo film. The apartment, then the pool, gym and lobby.</p>
+          </div>
+        </li>
+
+        <li class="film"
+          data-src="assets/videos/palace-beach-residence-720.mp4"
+          data-poster="assets/posters/palace-beach-residence.jpg"
+          data-title="Palace Beach Residence" data-place="Emaar Beachfront, Dubai" data-runtime="0:20">
+          <div class="film-frame">
+            <video class="film-preview" muted loop playsinline preload="none" aria-hidden="true"
+              poster="assets/posters/palace-beach-residence.jpg"
+              data-src="assets/videos/palace-beach-residence-preview.mp4"></video>
+          </div>
+          <div class="film-meta">
+            <h3 class="film-title">Palace Beach Residence</h3>
+            <button class="film-play" type="button" aria-label="Watch the Palace Beach Residence film with sound (20 seconds)">
+              <span class="film-play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span><span class="runtime">0:20</span>
+            </button>
+            <p class="film-place">Emaar Beachfront, Dubai</p>
+            <p class="film-desc">Apartment interiors with the marina skyline.</p>
+          </div>
+        </li>
+
+        <li class="film"
+          data-src="assets/videos/west-avenue-tower-720.mp4"
+          data-poster="assets/posters/west-avenue-tower.jpg"
+          data-title="West Avenue Tower" data-place="Dubai Marina, Dubai" data-runtime="0:13">
+          <div class="film-frame">
+            <video class="film-preview" muted loop playsinline preload="none" aria-hidden="true"
+              poster="assets/posters/west-avenue-tower.jpg"
+              data-src="assets/videos/west-avenue-tower-preview.mp4"></video>
+          </div>
+          <div class="film-meta">
+            <h3 class="film-title">West Avenue Tower</h3>
+            <button class="film-play" type="button" aria-label="Watch the West Avenue Tower film with sound (13 seconds)">
+              <span class="film-play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span><span class="runtime">0:13</span>
+            </button>
+            <p class="film-place">Dubai Marina, Dubai</p>
+            <p class="film-desc">Apartment with a view over the marina.</p>
+          </div>
+        </li>
+
+        <li class="film"
+          data-src="assets/videos/crest-grande-720.mp4"
+          data-poster="assets/posters/crest-grande.jpg"
+          data-title="Crest Grande" data-place="Sobha Hartland, Dubai" data-runtime="0:13">
+          <div class="film-frame">
+            <video class="film-preview" muted loop playsinline preload="none" aria-hidden="true"
+              poster="assets/posters/crest-grande.jpg"
+              data-src="assets/videos/crest-grande-preview.mp4"></video>
+          </div>
+          <div class="film-meta">
+            <h3 class="film-title">Crest Grande</h3>
+            <button class="film-play" type="button" aria-label="Watch the Crest Grande film with sound (13 seconds)">
+              <span class="film-play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span><span class="runtime">0:13</span>
+            </button>
+            <p class="film-place">Sobha Hartland, Dubai</p>
+            <p class="film-desc">Apartment with floor-to-ceiling views.</p>
+          </div>
+        </li>
+      </ul>
+
+      <p class="films-note">These are sample films. Building and developer names show where each listing is. They are not clients and do not endorse Anger Studio.</p>
+    </div>
+  </section>
+
+  <section class="section section-dark why-section" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <h2 class="why-title" id="why-title">Photos show the room. A film shows what it feels like to live there.</h2>
+      <div class="why-grid">
+        <div class="why-body">
+          <p>Your listing sits in a feed next to forty others with the same photos of the same kind of apartment. A short film stops the scroll. People watch it to the end, picture themselves walking in, and message you instead of the next agent.</p>
+          <p>Listings with video are the exception, not the rule, which is exactly why they stand out.</p>
+        </div>
+        <ul class="facts">
+          <li class="fact">
+            <span class="fact-num">4×</span>
+            <span class="fact-text">more enquiries for listings with a video, compared with photos only</span>
+          </li>
+          <li class="fact">
+            <span class="fact-num">73%</span>
+            <span class="fact-text">of owners would rather list with an agent who markets with video</span>
+          </li>
+          <li class="fact">
+            <span class="fact-num">12h</span>
+            <span class="fact-text">from the photos you send to a film you can post</span>
+          </li>
+        </ul>
+      </div>
+      <p class="facts-note">Enquiry and owner figures are industry survey averages reported by Domain and the National Association of Realtors. Results vary by listing.</p>
+    </div>
+  </section>
+
+  <section class="section section-light" id="how" aria-labelledby="how-title">
+    <div class="wrap split">
+      <h2 class="h2" id="how-title">How it works</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3 class="step-title">Send the listing photos</h3>
+          <p class="step-text">The photos you already have are enough, from anywhere in the world. No film crew, no shoot.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3 class="step-title">We build the film</h3>
+          <p class="step-text">We turn your photos into a short cinematic film, cut to music.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3 class="step-title">You post it within 12 hours</h3>
+          <p class="step-text">The finished film is ready for your listing and your social channels.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-light" id="prices" aria-labelledby="prices-title">
+    <div class="wrap split">
+      <div class="prices-intro">
+        <h2 class="h2" id="prices-title">Prices</h2>
+        <figure class="cuts" aria-label="One film, delivered in two shapes">
+          <div class="cut cut-wide">
+            <span class="cut-frame"></span>
+            <span class="cut-label"><span class="runtime">16:9</span>Horizontal</span>
+          </div>
+          <div class="cut cut-tall">
+            <span class="cut-frame"></span>
+            <span class="cut-label"><span class="runtime">9:16</span>Vertical</span>
+          </div>
+        </figure>
+        <p class="prices-includes">Every film comes as a horizontal cut for listing pages and a vertical cut for Reels, TikTok and Stories. Cut to music, with your branding on screen or a clean version without any.</p>
+        <p class="prices-pay">Pay when you have the film and are happy with it.</p>
+      </div>
+
+      <ul class="tiers">
+        <li class="tier">
+          <div class="tier-head">
+            <h3 class="tier-name">One film</h3>
+            <p class="tier-price">$99</p>
+          </div>
+          <p class="tier-text">For one listing. Ready within 12 hours.</p>
+          <a class="btn btn-lagoon tier-cta" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20one%20film%20for%20my%20listing" target="_blank" rel="noopener" data-cta>
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>Order one film
+          </a>
+        </li>
+        <li class="tier">
+          <div class="tier-head">
+            <h3 class="tier-name">10 films</h3>
+            <p class="tier-price">$690</p>
+          </div>
+          <p class="tier-text">$69 a film. Any ten listings, used whenever you want. Each film ready within 8 hours.</p>
+          <a class="btn btn-lagoon tier-cta" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20the%2010-film%20pack" target="_blank" rel="noopener" data-cta>
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>Order 10 films
+          </a>
+        </li>
+        <li class="tier">
+          <div class="tier-head">
+            <h3 class="tier-name">All your listings</h3>
+            <p class="tier-price"><span class="tier-from">from</span> $49 <span class="tier-unit">a film</span></p>
+          </div>
+          <p class="tier-text">20 films or more. A film for every listing you have, each ready within 8 hours. Tell us how many and we'll send a price.</p>
+          <a class="btn btn-lagoon tier-cta" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20films%20for%20all%20my%20listings.%20I%20have%20about%20__%20listings." target="_blank" rel="noopener" data-cta>
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>Tell us how many
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="section section-dark" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-grid">
+        <h2 class="contact-title" id="contact-title">Have a listing that needs a film?</h2>
+        <div class="contact-body">
+          <p class="contact-text">Send us the photos or a link to the listing on WhatsApp. Your film is back within 12 hours.</p>
+          <div>
+            <a class="btn btn-light btn-large" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20a%20film%20for%20my%20listing" target="_blank" rel="noopener" data-cta>
+              <svg aria-hidden="true"><use href="#i-wa"/></svg>Message us on WhatsApp
+            </a>
+          </div>
+          <p class="contact-alt">WhatsApp number <a href="https://wa.me/46703567605" target="_blank" rel="noopener">+46 70 356 76 05</a></p>
+          <p class="contact-owner">Anger Studio is run by Felix Anger.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© 2026 Anger Studio</p>
+        <p class="footer-note">Films on this page are samples made by Anger Studio.</p>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<a class="btn btn-lagoon btn-large dock" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20a%20film%20for%20my%20listing" target="_blank" rel="noopener" data-dock>
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>Message us on WhatsApp
+</a>
+
+<dialog class="player" id="player" aria-labelledby="player-title">
+  <div class="player-inner">
+    <div class="player-bar">
+      <div>
+        <p class="player-title" id="player-title"></p>
+        <p class="player-place" data-player-place></p>
+      </div>
+      <button class="player-close" type="button" data-close>
+        Close<svg aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <video class="player-video" controls playsinline preload="none"></video>
+    <div class="player-foot">
+      <p class="player-ask">Want a film like this for your listing?</p>
+      <a class="btn btn-light" href="https://wa.me/46703567605?text=Hi%20Anger%20Studio%2C%20I%27d%20like%20a%20film%20for%20my%20listing" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg>Message us on WhatsApp
+      </a>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
